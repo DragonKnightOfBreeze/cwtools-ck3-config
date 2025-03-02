@@ -20,20 +20,16 @@ event_scripted_effect = {
     alias_name[effect] = alias_match_left[effect]
 }
 
-
 alias[effect:<scripted_effect>] = bool
 alias[effect:<event_scripted_effect>] = bool
 
-
-###The scripted trigger will draw the value of the right clause via $left_clause$.
-#Todo: Make sure this works
+### The scripted trigger will draw the value of the right clause via $left_clause$.
 alias[effect:<scripted_effect>] = {
 	## cardinality = 0..inf
 	$parameter = $parameter_value
 }
 
-###The scripted trigger will draw the value of the right clause via $left_clause$.
-#Todo: Make sure this works
+### The scripted trigger will draw the value of the right clause via $left_clause$.
 alias[effect:<event_scripted_effect>] = {
 	## cardinality = 0..inf
 	$parameter = $parameter_value
