@@ -467,14 +467,6 @@ links = {
         input_scopes = { landed_title province }
         output_scope = landed_title
     }
-	### Reference the value of a numeric value in an array define: array_define:Namespace|Name|Index. Index is 0-based.
-    array_define = {
-        desc = " Reference the value of a numeric value in an array define: array_define:Namespace|Name|Index. Index is 0-based."
-        from_data = yes
-        data_source = <array_define>
-        prefix = array_define:
-        output_scope = value
-    }
     character = {
         from_data = yes
         type = scope
@@ -507,14 +499,6 @@ links = {
 	### Adds custom text between scope changes
     custom = {
         desc = " Adds custom text between scope changes"
-    }
-	### Reference the value of a numeric define: define:Namespace|Name
-    define = {
-        desc = " Reference the value of a numeric define: define:Namespace|Name"
-        from_data = yes
-        data_source = <define>
-        prefix = define:
-        output_scope = value
     }
     dummy_female = {
         output_scope = character
