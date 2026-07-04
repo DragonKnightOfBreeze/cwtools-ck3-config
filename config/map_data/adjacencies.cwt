@@ -1,0 +1,21 @@
+rows = {
+    row[adjacency] = {
+        path = "game/map_data"
+        path_file = "adjacencies.csv"
+        skip_last_row = yes
+        skip_last_column = yes
+
+        # From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+        columns = {
+            From = int # province id?
+            To = int # province id?
+            Type = value[location_type] # inferred
+            Through = int # province id?
+            start_x = int
+            start_y = int
+            stop_x = int
+            stop_y = int
+            # Comment = scalar # optional
+        }
+    }
+}

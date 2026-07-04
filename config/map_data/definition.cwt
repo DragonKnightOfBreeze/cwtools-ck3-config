@@ -1,0 +1,19 @@
+rows = {
+    row[definition] = {
+        path = "game/map_data"
+        path_file = "definition.csv"
+        type = index
+        skip_last_row = yes
+        skip_last_column = yes
+
+        # 0;0;0;0;x;x;
+        columns = {
+            0 = int # province id?
+            0 = int # province id?
+            0 = int # province id?
+            0 = int # province id?
+            x = scalar
+            # x = scalar # optional
+        }
+    }
+}
