@@ -1,0 +1,24 @@
+# Override Config (Crusader Kings III)
+#
+# See `cwt/core/00_overrides.cwt` for the format, strategies, confidence labels and sources.
+# Only game-specific entries are listed here; unmatched paths default to `lios`.
+#
+# Game-specific source:
+# - Official Crusader Kings III Wiki, "Modding" > "Override rules":
+#   https://ck3.paradoxwikis.com/Modding
+#
+# See: docs/en/ref-config-format.md#config-override
+# Version: 3.0.4-dev
+# Date: 2026-10-02
+
+overrides = {
+    # [high] Wiki: adding buildings requires overwriting the whole holdings file.
+    "common/holdings" = dupl
+
+    # [high] Wiki: events/random_events/on_actions are appended; trigger/effect overwrite but
+    # produce errors.
+    "common/on_action" = ordered
+
+    # [high] Wiki: UI types/templates follow FIOS (the first loaded wins).
+    "gui" = fios
+}
