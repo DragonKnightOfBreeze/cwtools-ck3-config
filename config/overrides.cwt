@@ -15,8 +15,7 @@ overrides = {
     # [high] Wiki: adding buildings requires overwriting the whole holdings file.
     "common/holdings" = dupl
 
-    # [high] Wiki: events/random_events/on_actions are appended; trigger/effect overwrite but
-    # produce errors.
+    # [high] Wiki: events/random_events/on_actions are appended; trigger/effect overwrite but produce errors.
     "common/on_action" = ordered
 
     # [high] Wiki: UI types/templates follow FIOS (the first loaded wins).
